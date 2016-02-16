@@ -1,0 +1,9 @@
+{
+  "firebase": "static-showdown-seed",
+  "public": "dist/prod",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
