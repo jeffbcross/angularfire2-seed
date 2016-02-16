@@ -60,6 +60,7 @@ interface InjectableDependency {
 
 // Declare NPM dependencies (Note that globs should not be injected).
 export const DEV_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencies([
+
   { src: 'systemjs/dist/system-polyfills.src.js', inject: 'shims', dest: JS_DEST },
   { src: 'reflect-metadata/Reflect.js', inject: 'shims', dest: JS_DEST },
   { src: 'es6-shim/es6-shim.js', inject: 'shims', dest: JS_DEST },
@@ -68,7 +69,9 @@ export const DEV_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencie
   { src: 'rxjs/bundles/Rx.js', inject: 'libs', dest: JS_DEST },
   { src: 'angular2/bundles/angular2.js', inject: 'libs', dest: JS_DEST },
   { src: 'angular2/bundles/router.js', inject: 'libs', dest: JS_DEST },
-  { src: 'angular2/bundles/http.js', inject: 'libs', dest: JS_DEST }
+  { src: 'angular2/bundles/http.js', inject: 'libs', dest: JS_DEST },
+  { src: 'angularfire2/**/*.js', inject: false, dest: JS_DEST},
+  { src: 'firebase/lib/firebase-web.js', inject: false, dest: JS_DEST},
 ]);
 
 export const PROD_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencies([
@@ -97,11 +100,17 @@ const SYSTEM_CONFIG_DEV = {
     [BOOTSTRAP_MODULE]: `${APP_BASE}${BOOTSTRAP_MODULE}`,
     'angular2/*': `${APP_BASE}angular2/*`,
     'rxjs/*': `${APP_BASE}rxjs/*`,
-    '*': `${APP_BASE}node_modules/*`
+    '*': `${APP_BASE}node_modules/*`,
+    'firebase': `${APP_BASE}node_modules/firebase/lib/firebase-web.js`,
+    'angularfire2': `${APP_BASE}node_modules/angularfire2/*`
   },
   packages: {
     angular2: { defaultExtension: false },
-    rxjs: { defaultExtension: false }
+    rxjs: { defaultExtension: false },
+    angularfire2: {
+      defaultExtension: 'js',
+      main: 'angularfire2.js'
+    }
   }
 };
 
@@ -111,7 +120,9 @@ export const SYSTEM_BUILDER_CONFIG = {
   defaultJSExtensions: true,
   paths: {
     'tmp/*': 'tmp/*',
-    '*': `node_modules/*`
+    '*': `node_modules/*`,
+    'firebase': `node_modules/firebase/lib/firebase-web.js`,
+    'angularfire2': `node_modules/angularfire2/angularfire2.js`
   }
 };
 
