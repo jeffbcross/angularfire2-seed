@@ -10,6 +10,14 @@ Refer to https://github.com/angular/angularfire2 for reference for AngularFire2
 Refer to https://www.firebase.com/docs/web/ for docs on using Firebase for Web apps
 Refer to http://www.typescriptlang.org/Tutorial to learn how to use TypeScript
 
+## Caution!
+
+This project uses several projects that are in beta or alpha (Angular 2 beta, AngularFire2 Alpha, RxJS 5 beta).
+Only those with a taste for adventure and maybe a few bugs should proceed.
+
+If you run into issues, feel free to tweet at [@jeffbcross](https://twitter.com/jeffbcross) for help,
+or look for Jeff Cross on the [Static Showdown Slack](https://static-showdown.slack.com/).
+
 # How to start
 
 **Note** that this seed project requires node v4.x.x or higher and npm 2.14.7.
