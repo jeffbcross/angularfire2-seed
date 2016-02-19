@@ -5,10 +5,10 @@ This project has everything needed to get started building an Angular 2 app with
 This is a fork of the popular [angular2-seed](https://github.com/mgechev/angular2-seed) by @mgechev and other contributors.
 Refer to that repository for more advanced topics.
 
-Refer to http://angular.io for guides and API reference for Angular 2
-Refer to https://github.com/angular/angularfire2 for reference for AngularFire2
-Refer to https://www.firebase.com/docs/web/ for docs on using Firebase for Web apps
-Refer to http://www.typescriptlang.org/Tutorial to learn how to use TypeScript
+ * Refer to http://angular.io for guides and API reference for Angular 2
+ * Refer to https://github.com/angular/angularfire2 for reference for AngularFire2
+ * Refer to https://www.firebase.com/docs/web/ for docs on using Firebase for Web apps
+ * Refer to http://www.typescriptlang.org/Tutorial to learn how to use TypeScript
 
 ## Caution!
 
