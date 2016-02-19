@@ -102,7 +102,7 @@ const SYSTEM_CONFIG_DEV = {
     'rxjs/*': `${APP_BASE}rxjs/*`,
     '*': `${APP_BASE}node_modules/*`,
     'firebase': `${APP_BASE}node_modules/firebase/lib/firebase-web.js`,
-    'angularfire2': `${APP_BASE}node_modules/angularfire2/*`
+    'angularfire2': `${APP_BASE}node_modules/angularfire2/`
   },
   packages: {
     angular2: { defaultExtension: false },
@@ -122,7 +122,13 @@ export const SYSTEM_BUILDER_CONFIG = {
     'tmp/*': 'tmp/*',
     '*': `node_modules/*`,
     'firebase': `node_modules/firebase/lib/firebase-web.js`,
-    'angularfire2': `node_modules/angularfire2/angularfire2.js`
+    'angularfire2': `node_modules/angularfire2/`
+  },
+  packages: {
+    'angularfire2': {
+      main: 'angularfire2.js',
+      defaultExtension: 'js'
+    }
   }
 };
 
