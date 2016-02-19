@@ -4,6 +4,7 @@ import {AngularFire, FirebaseObservable} from 'angularfire2';
 
 @Component({
   selector: 'about',
+  providers: [],
   moduleId: module.id,
   templateUrl: './about.html',
   directives: [FORM_DIRECTIVES, CORE_DIRECTIVES]

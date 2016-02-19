@@ -23,7 +23,15 @@ System.config({
   defaultJSExtensions: true,
   paths: {
     'angular2/*': 'node_modules/angular2/*.js',
-    'rxjs/*': 'node_modules/rxjs/*.js'
+    'rxjs/*': 'node_modules/rxjs/*.js',
+    'angularfire2': 'node_modules/angularfire2/',
+    'firebase': 'node_modules/firebase/lib/firebase-web.js'
+  },
+  packages: {
+    'angularfire2': {
+      main: 'angularfire2.js',
+      defaultExtension: 'js'
+    }
   }
 });
 

@@ -26,6 +26,8 @@ module.exports = function(config) {
       'node_modules/reflect-metadata/Reflect.js',
 
       { pattern: 'node_modules/angular2/**/*.js', included: false, watched: false },
+      { pattern: 'node_modules/angularfire2/**/*.js', included: false, watched: false },
+      { pattern: 'node_modules/firebase/lib/firebase-web.js', included: false, watched: false },
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
       { pattern: 'dist/test/spec/**/*.js', included: false, watched: true },
       { pattern: 'node_modules/systemjs/dist/system-polyfills.js', included: false, watched: false }, // PhantomJS2 (and possibly others) might require it
