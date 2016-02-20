@@ -122,14 +122,8 @@ export const SYSTEM_BUILDER_CONFIG = {
     'tmp/*': 'tmp/*',
     '*': `node_modules/*`,
     'firebase': `node_modules/firebase/lib/firebase-web.js`,
-    'angularfire2': `node_modules/angularfire2/`
+    'angularfire2': `node_modules/angularfire2/angularfire2.js`
   },
-  packages: {
-    'angularfire2': {
-      main: 'angularfire2.js',
-      defaultExtension: 'js'
-    }
-  }
 };
 
 // --------------
