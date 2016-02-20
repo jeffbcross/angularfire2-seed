@@ -123,7 +123,7 @@ export const SYSTEM_BUILDER_CONFIG = {
     '*': `node_modules/*`,
     'firebase': `node_modules/firebase/lib/firebase-web.js`,
     'angularfire2': `node_modules/angularfire2/angularfire2.js`
-  },
+  }
 };
 
 // --------------
